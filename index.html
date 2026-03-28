@@ -185,17 +185,25 @@
         }
         
         /* 滑鼠懸停時的品牌顏色 */
-        .link-item:nth-child(1):hover { border-color: #E1306C; }
-        .link-item:nth-child(1):hover .link-icon svg { fill: #E1306C; }
+        /* Portfolio (科技紫) */
+        .link-item:nth-child(1):hover { border-color: #8B5CF6; }
+        .link-item:nth-child(1):hover .link-icon svg { fill: #8B5CF6; }
+
+        /* Instagram */
+        .link-item:nth-child(2):hover { border-color: #E1306C; }
+        .link-item:nth-child(2):hover .link-icon svg { fill: #E1306C; }
         
-        .link-item:nth-child(2):hover { border-color: #1877F2; }
-        .link-item:nth-child(2):hover .link-icon svg { fill: #1877F2; }
+        /* Facebook */
+        .link-item:nth-child(3):hover { border-color: #1877F2; }
+        .link-item:nth-child(3):hover .link-icon svg { fill: #1877F2; }
         
-        .link-item:nth-child(3):hover { border-color: #EA4335; }
-        .link-item:nth-child(3):hover .link-icon svg { fill: #EA4335; }
+        /* Email */
+        .link-item:nth-child(4):hover { border-color: #EA4335; }
+        .link-item:nth-child(4):hover .link-icon svg { fill: #EA4335; }
         
-        .link-item:nth-child(4):hover { border-color: #34A853; }
-        .link-item:nth-child(4):hover .link-icon svg { fill: #34A853; }
+        /* Address */
+        .link-item:nth-child(5):hover { border-color: #34A853; }
+        .link-item:nth-child(5):hover .link-icon svg { fill: #34A853; }
 
         .link-content {
             display: flex;
@@ -234,11 +242,23 @@
                 <!-- 這裡會讀取目錄底下的 avatar.svg 圖片 -->
                 <img src="avatar.svg" alt="劉庭宇">
             </div>
-            <h1>劉庭宇</h1>
+            <h1>庭宇 劉</h1>
             <p class="subtitle">Personal Contact Information</p>
         </div>
 
         <div class="links-container">
+            <!-- Portfolio (作品集) -->
+            <a href="portfolio/index.html" class="link-item">
+                <div class="link-icon">
+                    <!-- 公事包/作品集 svg icon -->
+                    <svg viewBox="0 0 24 24"><path d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2zm-11-2h6v2H9V4zm11 16H4V8h16v12z"/><path d="M9 10h6v2H9z"/></svg>
+                </div>
+                <div class="link-content">
+                    <span class="link-title">Portfolio / 作品集</span>
+                    <span class="link-value">View my design works</span>
+                </div>
+            </a>
+
             <!-- Instagram (直接連結到 IG App 或網頁版) -->
             <a href="https://instagram.com/liutimyu.0226" target="_blank" class="link-item">
                 <div class="link-icon">
