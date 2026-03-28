@@ -76,6 +76,9 @@
         .avatar {
             width: 96px;
             height: 96px;
+            min-width: 96px;        /* 防止在手機上被擠壓變形 */
+            min-height: 96px;       /* 防止在手機上被擠壓變形 */
+            box-sizing: border-box; /* 確保邊框不會撐破圓形比例 */
             border-radius: 50%;     /* 確保外框是正圓形 */
             background: rgba(255, 255, 255, 0.05); /* 給一個淡淡的玻璃底色 */
             border: 2px solid rgba(56, 189, 248, 0.4); /* 加上科技感的亮藍色細邊框 */
@@ -85,6 +88,11 @@
             justify-content: center;
             overflow: hidden;       /* 確保超出的部分會被裁切成圓形 */
             padding: 0;             /* 移除留白，讓圖片完全貼合邊緣 */
+            /* 以下三行是專門修復 iPhone / iOS Safari 無法將內部圖片裁成圓形的終極 Bug */
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+            -webkit-backface-visibility: hidden;
+            transform: translateZ(0);
+
             animation: borderPulse 3s infinite alternate; /* 外框呼吸燈效果 */
         }
 
